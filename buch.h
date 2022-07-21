@@ -6,9 +6,12 @@
 class Buch
 {
 
+
 public:
     Buch();
     string ISBN;
+    int Exemplarcounter = 0;
+
 };
 
 #endif // BUCH_H
