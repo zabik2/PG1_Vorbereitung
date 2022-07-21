@@ -15,7 +15,7 @@ int main()
     menu();
     cin >> control;
 
-    while (control == 'b' or control == 'a'){
+    while (control == 'b' or control == 'a' or control == 'e' or control == 'l' or control == 'k'){
         system ("cls");
         switch (control){
         case 'b':{
@@ -24,6 +24,18 @@ int main()
         }
         case 'a':{
             Bibliothek1.Ausgeben();
+            break;
+        }
+        case 'e':{
+            Bibliothek1.AddExemplar();
+            break;
+        }
+        case 'l':{
+            Bibliothek1.DeleteExemplar();
+            break;
+        }
+        case 'k':{
+            Bibliothek1.Ausleihen();
             break;
         }
         default:

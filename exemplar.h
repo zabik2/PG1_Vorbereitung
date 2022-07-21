@@ -10,6 +10,9 @@ public:
     Exemplar();
     static int ID_Laufend;
     int ID_Current;
+    int getID_Current() const;
+
+    bool AusleihStatus = false;
 };
 
 #endif // EXEMPLAR_H
